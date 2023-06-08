@@ -5,7 +5,11 @@ const ThemeToggle = () => {
   return (
     <section className="toggle-container">
       <button className="dark-toggle" onClick={toggleDarkTheme}>
-        {isDarkTheme ? <BsFillMoonFill /> : <BsFillSunFill />}
+        {isDarkTheme ? (
+          <BsFillMoonFill className="toggle-icon" />
+        ) : (
+          <BsFillSunFill className="toggle-icon" />
+        )}
       </button>
     </section>
   );
